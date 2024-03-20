@@ -1,0 +1,25 @@
+
+<script>
+ 
+ /* Informe a média e imprima a classificação correspondente. 
+ Média menor que 4 - Reprovado.
+ Média menor que 6 - Recuperação.
+ Média Menor ou igual a 10 - Aprovado.
+ Média Maior que 10 - Média Inválida.  */
+
+
+ var media = Number(prompt( "Informe sua Média:"));
+
+      if (media < 4) {document.write (" Você foi Reprovado.");
+    }  else if  (media < 6 ) {
+        document.write ("Você está em Recuperação.");
+
+    } else if (media <= 10 ) {
+        document.write ("Você foi Aprovado.");
+    } 
+      else  {
+        document.write ("Média Inválida.");
+    }
+
+
+</script>
