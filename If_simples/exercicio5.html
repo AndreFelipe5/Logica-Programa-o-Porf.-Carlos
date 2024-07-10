@@ -1,0 +1,25 @@
+<script>
+
+/*O DETRAN cobra uma taxa de 1% para carros fabricados antes de 1990 e uma taxa de 1.5% para os
+fabricados de 1990 em diante, a taxa incide sobre o valor de tabela do carro. Faça um algoritmo que
+leia o ano e o preço do carro e a seguir calcule e imprima o imposto a ser pago. */
+
+
+var ano_carro = Number(prompt("Informe o Ano do Carro: "));
+var valor_carro = Number(prompt("Qual o Valor do Carro? "));
+
+if (ano_carro >= 1990 ) 
+
+{ var imposto = (valor_carro * 0.15)
+    document.write (" Valor do Imposto a ser pago: " + imposto + " R$.");
+  
+    
+} else { 
+
+    var imposto = (valor_carro * 0.10)  
+    
+    document.write("Valor do Imposto a ser pago " + imposto + " R$.");
+    
+}
+
+</script>

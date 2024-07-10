@@ -1,0 +1,40 @@
+<script>
+
+
+/* Escreva um algoritmo que recebe três inteiros como entrada do teclado e escreva na tela a média, a
+soma, o produto, o menor valor e o maior valor, usando uma linha para cada resultado.*/
+
+
+var num1 = Number(prompt("Informe um número qualquer: "));
+var num2 = Number(prompt("Informe um número qualquer: "));
+var num3 = Number(prompt("Informe um número qualquer: "));
+
+    var soma = (num1 + num2 + num3);
+    var produto = (num1 * num2 * num3);
+    var media = (soma / 3);
+
+    document.write("A soma é: " + soma + "<br>");
+    document.write("O produto é: " + produto + "<br>");
+    document.write("A média é: " + media + "<br>");
+
+
+
+var menor = num1;
+
+if (num2 < menor) menor = num2;
+if (num3 < menor) menor = num3;
+
+var maior = num1;
+
+if (num2 > maior) maior = num2;
+if (num3 > maior) maior = num3;
+
+document.write ("O menor valor é: " + menor + "<br>");
+document.write ("O maior valor é: " + maior + "<br>");
+
+
+
+
+
+
+</script>
