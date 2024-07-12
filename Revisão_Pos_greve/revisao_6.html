@@ -1,0 +1,28 @@
+<script>
+ // descobrir qual o numero maior e o menor
+    var num1 = Number(prompt("Informe o Primeiro numero: "));
+    var maior = num1;
+    var menor = num1;
+    var num2 = Number(prompt("Informe o segundo numero:"));
+    // verificar se o 2 numero é maior, se for maior atualizar a varivel 'maior' com este novo número.
+
+    if (num2 > maior) {
+        maior = num2;
+    }
+    if (num2 < menor) { 
+        menor = num2;
+    }
+    var num3 = Number(prompt("Informe o terceiro numero:"));
+    if (num3 > maior) {
+        maior = num3
+    }
+    if (num3 < menor) {
+        menor = num3
+    }
+    document.write ( " Maior numero é: " + maior + "<br>" )
+    document.write(" O menor Número é :" + menor);
+
+
+
+
+</script>
