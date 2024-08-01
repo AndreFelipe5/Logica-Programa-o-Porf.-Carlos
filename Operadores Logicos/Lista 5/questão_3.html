@@ -1,0 +1,57 @@
+<script>
+    /* 3- Uma empresa concederá um aumento de salário aos seus funcionários, variável de acordo com o cargo,
+    conforme a tabela abaixo. Faça um algoritmo que leia o código do cargo e o salário de um funcionário.
+    Por fim, de acordo com o percentual de aumento para aquele código, calcule o novo salário. Se o cargo
+    do funcionário não estiver na tabela, ele deverá, então, receber 50% de aumento. Mostre o salário
+    antigo, o novo salário e a diferença. 
+    
+    Código    Cargo      Percentual
+    101       Gerente       20%
+    102       Engenheiro    20%
+    103       Técnico       30% */
+
+    // Entrada dos Valores
+
+
+    var codigo_funcionario = Number(prompt(" Informe o seu Código: "));
+    var salario = Number(prompt(" Informe o valor do seu Salário"));
+
+    // Calculo dos Salários e aplicação do Aumento de acordo com o Código
+
+    if (codigo_funcionario == 101) {
+
+        var aumento = salario * 0.2
+        var valor_final = (aumento + salario);
+
+        document.write( `Seu antigo salário no valor de:  ${salario} R$.  Subiu para ${valor_final} R$. Um aumento de ${aumento} R$.`);
+
+    }
+
+    else if (codigo_funcionario == 102) {
+        var aumento = salario * 0.2
+        valor_final = (aumento + salario);
+
+
+        document.write(`Seu antigo salário no valor de:  ${salario} R$.  Subiu para ${valor_final} R$. Um aumento de ${aumento} R$.`);
+    }
+
+    else if (codigo_funcionario == 103) {
+        var aumento = salario * 0.3
+        valor_final = (aumento + salario);
+
+        document.write(`Seu antigo salário no valor de:  ${salario} R$.  Subiu para ${valor_final} R$. Um aumento de ${aumento} R$.`);
+    }
+
+    else {
+        var aumento = salario * 0.5
+        valor_final = (aumento + salario);
+
+        document.write(`Seu antigo salário no valor de:  ${salario} R$.  Subiu para ${valor_final} R$. Um aumento de ${aumento} R$.`);
+    }
+
+
+
+
+
+
+</script>

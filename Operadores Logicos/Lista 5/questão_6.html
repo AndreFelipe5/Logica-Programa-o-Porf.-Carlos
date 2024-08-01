@@ -1,0 +1,49 @@
+<script>
+
+/*6- Um comerciante comprou um produto e quer vende-lo com lucro de 45% se o valor da compra for entre
+1,00 e 20,00; caso contrário, o lucro será de 30%. Ler o valor do produto e imprimir o valor da venda */
+
+
+
+//  valor do produto
+var valor = Number(prompt("Digite o valor da compra: "));
+
+// Calcula o lucro
+var lucro;
+if ((valor >= 1.0) && (valor <= 20.0)) {
+    lucro = valor * 0.45;
+} else {
+    lucro = valor * 0.30;
+}
+
+// Calcula o valor de venda
+var valorVenda = valor + lucro;
+
+// valor de venda
+document.write(`Valor de venda: R$ ${valorVenda.toFixed(2)}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

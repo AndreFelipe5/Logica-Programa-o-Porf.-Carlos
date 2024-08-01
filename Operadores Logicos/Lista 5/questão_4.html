@@ -1,0 +1,40 @@
+<script>
+
+    // 4- Faça um script que leia três números e mostre-os em ordem decrescente.
+
+    // Solicitando os números.
+
+    var num1 = Number(prompt("Informe um número qualquer: "));
+    var num2 = Number(prompt("Informe um segundo número qualquer: "));
+    var num3 = Number(prompt("Informe um terceiro número qualquer: "));
+
+    // verificando a ordem decrescente
+
+    if ((num1 >= num2) && (num1 >= num3)) {
+        if (num2 >= num3) {
+            document.write(`Ordem decrescente dos números: ${num1}, ${num2}, ${num3}`);
+        } else {
+            document.write(`Ordem decrescente dos números: ${num1}, ${num3}, ${num2}`);
+        }
+    } else if ((num2 >= num1) && (num2 >= num3)) {
+        if (num1 >= num3) {
+            document.write(`Ordem decrescente dos números: ${num2}, ${num1}, ${num3}`);
+        } else {
+            document.write(`Ordem decrescente dos números: ${num2}, ${num3}, ${num1}`);
+        }
+    } else {
+        if (num1 >= num2) {
+            document.write(`Ordem decrescente dos números: ${num3}, ${num1}, ${num2}`);
+        } else {
+            document.write(`Ordem decrescente dos números: ${num3}, ${num2}, ${num1}`);
+        }
+    }
+
+
+
+
+
+
+
+
+</script>

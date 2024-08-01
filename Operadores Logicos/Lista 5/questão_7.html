@@ -1,0 +1,40 @@
+<script>
+
+
+    /*7- Faça um programa que leia 3 números, some-os e exiba uma mensagem com o resultado comparando
+    se os valores são maiores, menores ou iguais a 100. Os números precisam ser diferentes uns dos outros.*/
+
+
+
+    // Solicitar números
+
+    var num1 = Number(prompt(" Informe o primeiro número: "));
+    var num2 = Number(prompt(" Informe o segundo número diferente : "));
+    var num3 = Number(prompt(" Informe o terceiro número diferente : "));
+
+    // Verificando se os números são diferentes
+
+    if ((num1 !== num2) && (num1 !== num3) && (num2 !== num3)) {
+        // Calcula a soma
+        var soma = num1 + num2 + num3;
+
+        // Compara com 100
+        if (soma > 100) {
+            document.write(`A soma dos três números ${soma} é maior que 100.`);
+        } else if (soma < 100) {
+            document.write(`A soma dos três números ${soma} é menor que 100.`);
+        } else {
+            document.write(`A soma dos três números ${soma} é igual a 100.`);
+        }
+    }
+    else {
+        document.write("Os números precisam ser diferentes uns dos outros.");
+    }
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,39 @@
+<script>
+
+
+/*5- Faça um script que leia um número e faça as seguintes verificações: Se for divisível por 3, informe “é
+divisível por 3”. Se for divisível por 4, informe “é divisível por 4”. Se for divisível por 3 e 4, informe “É
+divisível tanto por 3 quanto por 4”. */
+
+
+// solicitar o número
+var numero = Number (prompt("Informe um número: "));
+
+// Verifica se é divisível por 3 ou 4
+
+
+if (numero % 3 === 0 && numero % 4 === 0) {
+    document.write(` O número ${numero} é divisível por 3 e por 4.`);
+} else if (numero % 3 === 0) {
+    document.write(` O número ${numero} É divisível por 3.`);
+} else if (numero % 4 === 0) {
+    document.write(`O número ${numero} É divisível por 4.`);
+} else {
+    document.write(` O número ${numero} Não é divisível por 3 nem por 4.`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
